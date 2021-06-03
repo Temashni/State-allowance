@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="less.js" type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+</head>
+<body id="scroll">
+    <div class="header-info container">
+        <div class="header-info__container">
+            <div class="header-info__logo">
+                <a href="#!"><img class="header-info__logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                <a href="#!" class="header-info__logo-text"><p>Камень Памяти</p></a>
+            </div>
+            <div class="header-info__search">
+                <input class="header-info__search-text" type="search" name="q" placeholder="Найти на сайте"> 
+                <button class="header-info__search-button" type="pointer">Поиск</button>
+            </div>
+            <div class="header-info__address">
+                <ul class="header-info__address-number"> 
+                    <li class="header-info__address-text"><a href="#!" class="header-info__address-text text"> г. Саратов, ул. Вольская, 68</a><img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
+                        <div class="header-info__dropdown">
+                            <a href="" class="header-info__dropdown-text">г. Саратов, ул. Вольская 68</a>
+                            <a href="" class="header-info__dropdown-text">г. Саратов, ул. Рижская, 31а</a>
+                            <a href="" class="header-info__dropdown-text">г. Энгельс, ул. Петровская, 57</a>
+                            <a href="" class="header-info__dropdown-text">г. Вольск, ул. Водопьяного, 126</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-info__social-network">
+                <a href="#!"><span class="header-info__social-network__img-inst"></span></a>
+                <a href="#!"><span class="header-info__social-network__img-vk"></span></a>
+            </div>
+            <div class="header-info__phone">
+                <a href="#!" class="header-info__phone-button text"><span class="header-info__phone-call">Звонок</span></a>
+                <a href="#!" class="header-info__phone-number"><p>8 (8452) 71-17-12</p></a>
+            </div>
+        </div>
+
+    <div class="header-info__mobile">
+        <div class="header-info__mobile-container">
+            <div class="header-info__mobile-logo">
+                <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
+            </div>
+            <div class="header-info__mobile-cart">
+                <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
+            </div>
+            <div class="header-info__mobile-cart">
+                <a href=""><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
+            </div>
+            <div class="wrapper">
+                <div class="xbox">
+                    <button class="xbox-img" onclick="show()"></button>
+                </div>
+                <div class="modal" id="modal">
+                  <div class="window">
+                      <div class="header-info__container">
+                        <div class="header-info__mobile-logo">
+                            <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                            <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
+                        </div>
+                        <div class="header-info__mobile-cart">
+                            <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
+                        </div>
+                        <div class="header-info__mobile-cart">
+                            <a href="#!"><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
+                        </div>
+                        <button class="closed"  onclick="unshow()"><img src="images/closed.svg"></button>
+                    </div>
+                    <ul class="header-mobile__menu">
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">О нас</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Оплата и доставка</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Установка</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Скидки</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Наши работы</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Контакты</a></li>
+                    </ul>
+                    <div class="header-mobile__menu-adress-container">
+                        <li class="header-mobile__menu-adress-text">г. Саратов, ул. Вольская, 68 <img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
+                            <div class="header-mobile__menu-adress">
+                                <a href="" class="header-info__dropdown-text">г. Саратов, ул. Вольская 68</a>
+                                <a href="" class="header-info__dropdown-text">г. Саратов, ул. Рижская, 31а</a>
+                                <a href="" class="header-info__dropdown-text">г. Энгельс, ул. Петровская, 57</a>
+                                <a href="" class="header-info__dropdown-text">г. Вольск, ул. Водопьяного, 126</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="header-mobile__phone-container">
+                        <div class="header-mobile__phone">
+                            <a href="#!" class="header-mobile__phone-number"><p>8 (8452) 71-17-12</p></a>
+                            <button class="header-mobile__phone-button"><span class="header-mobile__phone-call">Звонок</span></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-menu">
+    <div class="header-menu__block container">
+        <ul class="header-menu__container">
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">О нас</a></li>
+            <li class="header-menu__link">
+                <a class="header-menu__link-text" href="#!">Услуги <img class="header-menu__link-text-img" src="images/aikon1x.png" srcset="images/aikon2x.png"></a>
+                <div class="header-menu__dropdown">
+                    <a href="" class="header-menu__dropdown-text">Памятники</a>
+                    <div class="header-menu__dropdown-window">
+                        <a href="" class="header-menu__dropdown-text">Мемориальные комплексы</a>    
+                        <div class="header-menu__dropdown-right">
+                            <a href="#!" class="header-menu__dropdown-text-right">Для одного захоронения</a>
+                            <a href="#!" class="header-menu__dropdown-text-right">Для семейных захоронений</a>
+                        </div>
+                    </div>
+                    <a href="#!" class="header-menu__dropdown-text">Гравировка</a>
+                    <a href="#!" class="header-menu__dropdown-text">Благоустройство</a>
+                </div>
+            </li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Оплата и доставка</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Установка</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Скидки</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Наши работы</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Контакты</a></li>
+        </ul>
+        <div class="header-menu__cart">
+            <a class="header-menu__cart-text" href="#!"><p>Корзина</p></a>
+            <a href="#!"><span class="header-menu__cart-img"></span></a>
+        </div>
+    </div>
+</div>
+
+    <div class="page container">
+        <p class="page__text"><a href="#!" class="page__text text">Главная</a> / <a href="#!" class="page__text  text">Каталог</a> / <a href="#!" class="page__text text">Гранитный памятник с голубем и церковью</a></p>
+    </div>
+    <div class="state-allowance container">
+        <h2 class="state-allowance__text">Государственные пособия</h2>
+        <div class="state-allowance__content">
+            <div class="state-allowance__content-container">
+                <p class="state-allowance__content-text">Всем ветеранам, участникам ВОВ и пенсионерам МО, МВД, ФСБ государство предоставляет компенсацию при изготовлении памятника на могилу. Согласно госсоцпрограмме, пособие на надгробные памятники участникам ВОВ, а также пенсионерам МО и другим категориям выделяет государство. Эти деньги идут на оплату производства, установки бесплатных надгробных знаков из натурального гранита или мрамора на могилу человека, воевавшего на Великой Отечественной войне. Но, прежде чем сделать заказ, а после и возврат средств, требуется оформление документов. Компания Камень памяти, участвуя в данной программе, изготавливает в Саратове и области памятники участникам ВОВ бесплатно. Пока не осуществится возврат, т.е. возмещение бюджетных средств на производство могильных ритуальных надгробий, эксклюзивных комплексов, мы берем на себя расходы.</p>
+                <p class="state-allowance__content-text">По указанию Генштаба ВС РФ, заказать памятник участнику ВОВ можно из гранита и мрамора высокого качества.<br> Вы купите комплект из: стелы (с полировкой, с указанием фамилии, имени, даты жизни, с фото, надписями<br> и т.д.), подставки, цветника. Прежде чем заказывать их изготовление, монтаж и другие процедуры, а также возвращать деньги из бюджета, получать пособие на памятник участнику ВОВ, приготовьте ряд документов. Мы расскажем все<br> в деталяхи поможем в этом вопросе.</p>
+            </div>
+            <img class="state-allowance__content-img" src="images/death-certificate1x.png" srcset="images/death-certificate2x.png">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__info container">
+            <div class="footer__info-container wraper">
+                <a href="#!" class="footer__info-title text"><p">Камень памяти</p></a>
+                <div class="footer__info-wraper">
+                    <div class="footer__info-container-text">
+                        <a href="#!" class="footer__info-text"><p>г. Саратов, ул Вольская, 68</p></a>
+                        <a href="#!" class="footer__info-text"><p>8 (8452) 71-17-12</p></a>
+                        <a href="#!" class="footer__info-text"><p>info@кп-сар.рф</p></a>
+                    </div>
+                    <div class="footer__social-network">
+                        <a href="#!"><img class="footer__social-network__img" src="images/vk-social-logotype 2.svg"></a>
+                        <a href="#!"><img class="footer__social-network__img" src="images/instagram.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__menu-container">
+                <div class="footer__menu">
+                    <a href="#!" class="footer__menu-text"><p>О нас</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Памятники</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Гравировка</p></a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#!" class="footer__menu-text"><p>Услуги</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Контакты</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Установка</p></a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#!" class="footer__menu-text"><p>Скидки</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Наши работы</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Оплата и доставка</p></a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#!" class="footer__menu-text"><p>Благоустройство</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Мемориальный комплекс</p></a>
+                    <a href="#!" class="footer__menu-text"><p>Часто задаваемые вопросы</p></a>
+                </div>
+            </div>
+            <div class="footer__menu-wraper wraper">
+                <div class="footer-menu-container">
+                    <div class="footer__menu">
+                        <a href="#!" class="footer__menu-text"><p>О нас</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Памятники</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Гравировка</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Благоустройство</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Наши работы</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Мемориальный комплекс</p></a>
+                    </div>
+                    <div class="footer__menu">
+                        <a href="#!" class="footer__menu-text"><p>Услуги</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Контакты</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Установка</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Скидки</p></a>
+                        <a href="#!" class="footer__menu-text"><p>FAQ</p></a>
+                        <a href="#!" class="footer__menu-text"><p>Оплата и доставка</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__creater container">
+            <a href="#!" class="footer__creater-text"><p>Политика конфиденциальности</p></a>
+            <p class="footer__creater-text-year ">2021</p>
+            <a href="#!" class="footer__creater-text"><p>Сделано в Сайт-Креатив</p></a>
+        </div>    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
