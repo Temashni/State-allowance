@@ -385,6 +385,11 @@ body {
     margin-top: 25px;
 
     padding: 7px 19px;
+
+    &:hover {
+        background: #8B776E;
+        color: #FFFFFF;
+    }
 }
 
 .header-mobile__phone-call {
@@ -900,28 +905,28 @@ justify-content: space-between;
     &__text {
         font-family: "Circe";
         font-size: 15px;
-        line-height: 15px;
+        line-height: 24px;
         /* identical to box height, or 15px */
         color: #545D6D;
         text-decoration: none;
     }
 }
 
-.state-allowance {
+.payment-delivery {
     margin-top: 46px;
 
     @media screen and (max-width:1250px) {
         width: calc(100% - 30px);
     }
 
-    &__text {
+    &__title {
         text-align: center;
 
         font-family: "Circe";
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: 19px;
+        line-height: 24px;
         text-transform: uppercase;
         
         color: #545D6D;
@@ -929,58 +934,42 @@ justify-content: space-between;
 
     &__content {
         display: flex;
-        justify-content: space-between;
-
-        margin-top: 41px;
-
-        @media screen and (max-width:768px) {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-    }
-
-    &__content-container {
-        width: 830px;
-
-        @media screen and (max-width:768px) {
-            width: 100%;
-            margin: 0 auto;
-
-            margin-top: 20px;
-        }
-
-        @media screen and (max-width:1250px) {
-            padding: 0 12px 0 0;
-        }
-    }
-
-    &__content-text {
-        font-family: "Circe-light";
-        font-size: 16px;
-        line-height: 24px;
-
-        color: #000000;
+        flex-direction: column;
 
         &:not(:first-child) {
-            margin-top: 23px;
+            margin-top: 24px;
         }
 
-        @media screen and (max-width:768px) {
-            width: 100%;
-            margin: 0 auto;
+        @media screen and (max-width:600px) {
             text-align: center;
         }
     }
 
-    &__content-img {
-        width: 340px;
-        height: 316px;
+    &__content-title {
+        font-family: "Circe";
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #545D6D;
 
-        @media screen and (max-width:400px) {
-            width: 100%;
-            height: auto;
-        }
+        margin-top: 34px;
+    }
+
+    ._content-text {
+        font-family: "Circe-light";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #545D6D;
+    }
+
+    &__text {
+        margin-top: 13px;
+    }
+
+    &__content-text {
+        margin-top: 20px;
     }
 }
 

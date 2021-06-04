@@ -302,6 +302,10 @@ body {
   margin-top: 25px;
   padding: 7px 19px;
 }
+.header-mobile__phone-button:hover {
+  background: #8B776E;
+  color: #FFFFFF;
+}
 .header-mobile__phone-call {
   font-family: "Circe";
   font-size: 16px;
@@ -686,81 +690,62 @@ body {
 .page__text {
   font-family: "Circe";
   font-size: 15px;
-  line-height: 15px;
+  line-height: 24px;
   /* identical to box height, or 15px */
   color: #545D6D;
   text-decoration: none;
 }
-.state-allowance {
+.payment-delivery {
   margin-top: 46px;
 }
 @media screen and (max-width: 1250px) {
-  .state-allowance {
+  .payment-delivery {
     width: calc(100% - 30px);
   }
 }
-.state-allowance__text {
+.payment-delivery__title {
   text-align: center;
   font-family: "Circe";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 19px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #545D6D;
 }
-.state-allowance__content {
+.payment-delivery__content {
   display: flex;
-  justify-content: space-between;
-  margin-top: 41px;
+  flex-direction: column;
 }
-@media screen and (max-width: 768px) {
-  .state-allowance__content {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+.payment-delivery__content:not(:first-child) {
+  margin-top: 24px;
 }
-.state-allowance__content-container {
-  width: 830px;
-}
-@media screen and (max-width: 768px) {
-  .state-allowance__content-container {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .state-allowance__content-container {
-    padding: 0 12px 0 0;
-  }
-}
-.state-allowance__content-text {
-  font-family: "Circe-light";
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-}
-.state-allowance__content-text:not(:first-child) {
-  margin-top: 23px;
-}
-@media screen and (max-width: 768px) {
-  .state-allowance__content-text {
-    width: 100%;
-    margin: 0 auto;
+@media screen and (max-width: 600px) {
+  .payment-delivery__content {
     text-align: center;
   }
 }
-.state-allowance__content-img {
-  width: 340px;
-  height: 316px;
+.payment-delivery__content-title {
+  font-family: "Circe";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #545D6D;
+  margin-top: 34px;
 }
-@media screen and (max-width: 400px) {
-  .state-allowance__content-img {
-    width: 100%;
-    height: auto;
-  }
+.payment-delivery ._content-text {
+  font-family: "Circe-light";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #545D6D;
+}
+.payment-delivery__text {
+  margin-top: 13px;
+}
+.payment-delivery__content-text {
+  margin-top: 20px;
 }
 @media screen and (max-width: 1250px) {
   br {
