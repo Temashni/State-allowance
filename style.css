@@ -691,6 +691,58 @@ body {
   color: #545D6D;
   text-decoration: none;
 }
+.payment-delivery {
+  margin-top: 46px;
+}
+@media screen and (max-width: 1250px) {
+  .payment-delivery {
+    width: calc(100% - 30px);
+  }
+}
+.payment-delivery__title {
+  text-align: center;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #545D6D;
+}
+.payment-delivery__content {
+  display: flex;
+  flex-direction: column;
+}
+.payment-delivery__content:not(:first-child) {
+  margin-top: 24px;
+}
+@media screen and (max-width: 600px) {
+  .payment-delivery__content {
+    text-align: center;
+  }
+}
+.payment-delivery__content-title {
+  font-family: "Circe";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #545D6D;
+  margin-top: 34px;
+}
+.payment-delivery ._content-text {
+  font-family: "Circe-light";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #545D6D;
+}
+.payment-delivery__text {
+  margin-top: 13px;
+}
+.payment-delivery__content-text {
+  margin-top: 20px;
+}
 .state-allowance {
   margin-top: 46px;
 }

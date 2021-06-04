@@ -907,6 +907,67 @@ justify-content: space-between;
     }
 }
 
+.payment-delivery {
+    margin-top: 46px;
+
+    @media screen and (max-width:1250px) {
+        width: calc(100% - 30px);
+    }
+
+    &__title {
+        text-align: center;
+
+        font-family: "Circe";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        
+        color: #545D6D;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width:600px) {
+            text-align: center;
+        }
+    }
+
+    &__content-title {
+        font-family: "Circe";
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #545D6D;
+
+        margin-top: 34px;
+    }
+
+    ._content-text {
+        font-family: "Circe-light";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #545D6D;
+    }
+
+    &__text {
+        margin-top: 13px;
+    }
+
+    &__content-text {
+        margin-top: 20px;
+    }
+}
+
 .state-allowance {
     margin-top: 46px;
 
